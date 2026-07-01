@@ -1,0 +1,41 @@
+services:
+
+  embedded:
+
+    image: ghcr.io/DAMPFERS/embedded-dev:latest
+
+    privileged: true
+
+    stdin_open: true
+
+    tty: true
+
+    network_mode: host
+
+    volumes:
+      - ./workspace:/workspace
+      - /dev:/dev
+
+    working_dir: /workspace
+
+
+
+# services:
+
+#   embedded:
+
+#     build: .
+
+#     container_name: embedded-dev
+
+#     privileged: true
+
+#     stdin_open: true
+
+#     tty: true
+
+#     volumes:
+#       - ./workspace:/workspace
+#       - /dev:/dev
+
+#     working_dir: /workspace

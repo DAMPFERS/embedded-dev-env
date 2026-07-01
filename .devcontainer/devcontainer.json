@@ -1,0 +1,9 @@
+{
+    "name": "Embedded",
+
+    "dockerComposeFile": "../docker-compose.yml",
+
+    "service": "embedded",
+
+    "workspaceFolder": "/workspace"
+}
