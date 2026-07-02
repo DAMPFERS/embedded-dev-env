@@ -1,6 +1,6 @@
 services:
   embedded:
-    image: ghcr.io/DAMPFERS/embedded-dev:latest
+    image: ghcr.io/dampfers/embedded-dev:latest
     build: .
     container_name: embedded-dev
     privileged: true
